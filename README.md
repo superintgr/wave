@@ -44,3 +44,22 @@ The physical variables are those quantitites whose substrates have the normalize
 
 That is for all differentiable chages caused by these frozen attributes will contribute a sharp state regardless of the measurable quantity.
 
+**Notes**
+- `measurable quantity`(s) are those abstract variables whose causal states are possible and does not require anything but the constructor which causes some dependent subsystem to remain possible (*attached*)
+
+## Physical Variable
+
+> ref: [downstream oxygen sensor, autoencoders, copies minimum to parameters without learning]
+
+***Floating Natives***
+>> **autoencoders** learn features with unreasonable proportion of hidden parameters in their learnable layers. this leads to faster drops in loss trends during training however testing reveals very unreasonable learning behavior too.
+>> the explanation requires the dynamical changes made to prepare the trend which exposes the network to regular training data and the patterns of activities for the whole period in picture.
+>> when the training steps are inspected carefully, it typically consists of the following `static` pattern:
+>> ... input, output = train_set
+>> ... prediction = model(input)
+>> ... loss = criterion(prediction, output)
+>> where the loss produces a landscape encoding all the information related to what the model responds with and how its response corresponds with the impulse caused the model to respond. however the impulse is not the input directly, and rather how the causal attributes constructed from exposing one of the states of the expected system given to the model as input justifies one of the associated other state of that same type of system as resembling the output expected.
+>> **notice** that the expectation values and dynamical interactions are both follow from the usual group of parameter families [`static`, `dynamic`, `state`] forming the constitutional attributes of any system; *however* the evolution of each of these two systems do not follow any `observable path` on which neither of the two systems are possible to have at least one of the `medium attribute` for `information state` to be possible since no medium is asserted to have been present from the fundamental principle behind training such a `random-like` substrate.
+>> **notice** the fundamental principle asserts some regularity in nature that computers do conform to obey in their processing of information variables, hence the word `principle'. with that notion nothing like *random* attribute could ever be caused to represnt *deterministic* attribute, especially when the substrate is asserted to be in random initialized state. therefore ***no such principle exists for a network that initialize non deterministic states*** and ***for any regularity to be measured, there must be a regularity in instantiations in states for all possible states where at least two of the states are deterministic*** proves that `no random network could produce deterministic observable` for which `all non perturbing measurement`(s) encoding `stochastic variables in state` satisfies the definition of `regular network of nodes' while preserving `linear superposition of states` to be possible (i.e. objective regularities in nature and principles of physical laws)
+>> **acknowledge** that the very possibility of any record to consists such a statistical information requires that there exists absolutely **deterministic** instantes of states because something remains in existence invarient to any observable that is sharp in any physical network there exists.
+>> **finally** because there cannot always be a sharp measurable quantity in any systems at all, that intrinsic variable is designed out of training algorithms due to bad theories explaning computation and information.
