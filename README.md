@@ -25,3 +25,22 @@ Constructors whose object systems cause interference patterns.
 - regular network
 - locally inaccessible information
 - angular momentum
+
+## Substrate Specific Property
+
+> ref: [strata, datum]
+
+Consider a stack representing the geological stratum of an universe. The physics dictates that there be conservation of energy in each of the possible strata within the composition of tbe structure that encodes all the tensorial information.
+
+The tensor that parameterizes that stack must be of one so that their model instances will always preserve the intrinsic symmetry in their parametrization scheme such that whenever an instance causes a differentiable change which results in now multiple other instances, and each of them are jointly isolated, their combined effect conserves the same net quantity with which the original instance had retained fixed point outputs.
+
+For example the `GPT2` checkpoints constitute a closed system and as long as the layers are frozen thier transformations will always cause the same patterns in final state.
+
+## Disjoint Attributes
+
+If we prepare a new substrate with its base layer set to use the `GPT2` checkpoints, the frozen layers will represent the `disjoint attributes`, where the causal outputs from the base layer constitutes the **ground state** of the new substrate.
+
+The physical variables are those quantitites whose substrates have the normalized outputs from `base layer` and their **logical state** attributes `x` in set `X` have all `x * x ~ x'` and `abs(x') == 1`.
+
+That is for all differentiable chages caused by these frozen attributes will contribute a sharp state regardless of the measurable quantity.
+
