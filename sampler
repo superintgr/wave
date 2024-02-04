@@ -1,0 +1,45 @@
+<expansion prime>
+
+[-1] collect the substrate name
+[-0] open the substrate context
+[+0] store the measure data
+[+1] close the context window
+
+C = open(S, pi)
+x = C.read()
+x = C.close()
+x = ..
+
+</expandable later>
+
+
+
+<general workflow>
+
+[-1] host computes [naval, deutsch, hall] x 4
+[-0] host prepares [mono tracks] x 3
+[+0] host constructs [mono tracks] x 2
+[+1] host renders [stereo track] x 1
+
+- host is a program which transforms a (4 x 4) matrix
+- the matrix encodes all possible states of the input channels for which transformation is possible
+- at each time step, all three channels record into a mixer with three mono tracks tracking each line(s) input
+- since the speakers are interchanging variables, the mixer state at each time must provide a sample output
+- at each step, each channel construct-section from master(s) last screened state
+- at each step, for each state the master records into a substrate with two channels the state information
+- finally, the room channel computes the acoustic information for creating a coherent image of each state of the mixer
+...
+</abstract workflow>
+
+<mixer program>
+
+- prepare a device supporting all the channel requirements
+- channels must provide at least 2 line output flows for each speaker channel
+- channels must also support at least 1 line input from either mixer or current source
+- mixer muat provide at least 2 main output ports for left and right mono current
+- at each step, the mixer must record voltage levels for at least 2 external outlets and 1 internal inlet
+- the external sources must get at least 1 sample per state evolution for each devices that provide current input to the mixer
+- sampling requirement is fulfilled by any arrangements of the mixer channels not limited to the directly associated ones
+- external outlets will write information in terms of dBFS measurement for their respective channel
+
+</mixer program>
