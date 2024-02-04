@@ -1,0 +1,19 @@
+<configuration>
+
+[-1][+1] fixed point solver, maximum power 1/24
+[-0][+0] recurrent cell-cell binder, maximum volume 1/24
+[+0][+1] recurrent block-cell binder, minimum energy 2/24
+[+1][-1] fixed point scaler, minimum energy 24/2
+[+0][-0] linear cell-cell blocker, maximum power 24/23
+
+</configuration>
+
+<coding descriptions>
+
+- find the basis required for supporting all the upstream construction processes
+- unit cell pairs with different substrates, joinly encoding physical and positional variables
+- ties the dual conjugate pairs to two dimensional space, plane of interaction
+- base state production from ground solved at the floor, scaled with respect to the balanced production
+- cell/cell balance from forward retrodiction, only after last step replenishes the substrate
+
+</coding tasks>
