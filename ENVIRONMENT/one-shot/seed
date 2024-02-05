@@ -1,0 +1,8 @@
+[\seed\value\random\rng\pseudo\generator\.../seed]
+
+[seed] what is that value? for what it does as input?
+[random seed] seed value if not random then what else? what might it not be?
+[without seed] why seed anything at all? what is the conceptual background?
+[alternative] other ways of setting seed-like functions?
+
+\randomness\correlated\deterministic\arbitraryness../seed/random
