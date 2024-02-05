@@ -1,0 +1,32 @@
+[omni directional microphone pattern/cusp/cardioid function/cardoid pattern/microphone patterns/polar patterns/
+/contour map/gain-sensitivity proximity contour/...\gradient descent steps/contour lines/loss landscape/steepest descent algorithm contour pattern/...\definitions and abstraction\contour\melodic contour\clave\rythmic-key structure\...\making algorithmic music through step by step procedures]
+
+[steep slope] Plots contain plane on which the contour information is embedded, the radial expansion of area from origin (closest to the midpoint of the plane) scales the magnitude of components that sits on the vector of the cross sectional area.
+[[cross sectional area: is referring to a line going across the plane with crossing the origins of the circles drawn that reduces to the origin or smallest possible radius and expand in radius toward to maximum increasing area of the embedded region (plane)]]
+[[scaling the magnitude: the contour information encodes the sharpest change available within some mixture of attributes in homogeneous medium outlining the gradual changes between two distinct attribute. the vectors that carry component variables across the scaling path through cutting at each extents of radial lines, the contour map defines the magnitude of any component landing in those areas by which the scalar quantity is applied to the variable]]
+[plotting experiments] a plane in two dimensional coordinate system is represented as an analog of uneven terrain like landscape where the horizon and position of any object travelling across can have varying levels of complexities in searching through some set of possible paths that remains attached to the ground with the usual gravitional component encoding resistance for slopes of different kinds. when the radial lines are said to provide circular traversal of cyclic motion through limiting scope of locally accessible dynamics for each step in sampling, the data from all radial distances collected can be used to select the angle for which each sampled point cuts the line at the same point such a line is the vector on that field. any component of the vector will be scaled at those points by the amount which is inversely proportional to the distance from the center for all elements in the vector], [drawing perpendicular line: the line which can be drawn from the plane at those points on the circle towards the normal direction i.e. perpendicular to the plane (xy) -> z (elevation), such that triangle inequality solves for the height/radius, scale/magnitude, displacement/elevation .. representing the positonal information of the observer.]
+
+[constructing contour peak][view points][[side], [top]]
+[steep slope][smooth slope][topological information]
+
+[topological information] in spherical system, the (x, y, z) and (r, phi, theta) are pairs that represent same identity of the observer.
+any observer while remaining fixed at the origin, the net displacement is recorded in the following ways:
+.. x -> y [scalar in one dimensional line]
+.. xy -> z [vector in two dimensional plane]
+.. xyz -> i [matrix in three dimendional sphere]
+[equivalent (static, dynamic, state, object) with spherical coordinates]
+. [[+identity] * [cartesian] + [spherical] * [-identity]] -> [tensor product in structural object]
+
+[possible knowledge][observer * planer field]
+. o at origin learns (displacement from position, 0) <- 0 : change in x / change in y
+.. o at displaced position learns (slope applied to y at x' as y -> z for y' <- (x, x'), y value at x')
+... o at rotated plane learns (x' at x), ((y, y') at xy), ((z', x, y) at xyy')) while z' -> x' at (0, 0, 1)
+o . -o at (((i,))) at inaccessible state learns (no local change, polarity flipped as to I.not(I)) wave function encodes state vectors.
+
+[dynamical motion] the derivative information are partials of each one parameter family against other, for all permutations of the state vectors.
+The gradient information is found by taking account of the sight from observer at any point in the direction of straightest path towards * position on hypersphere.
+Any projection of the * onto the plane will encode distances that change positions of the observer with respect to the angles between both sight in rising levels and horizon along normal field of view.
+For any change in position, the angle displacement from two points in any of the attribute direction gives gradient information for the relative change.
+The direction is found by considering any of the two angles from flat plane to changing height, tilted head from vertical direction onto the plane at minimum elevation, vertical-horizontal complex measure value for line at which extending path from origin in some direction would hit exactly etc. all of which gives relative positional information with different modes of complexities.
+
+[\contour\steep slope\smooth slope\contour mapping\planar field for projection\magnitude and scaling\vectors at contour lines\experimental sampling\spherical system\dual coordination\observer and azmimuth\gradient information\translation in spherical objects\state vector and relative state\positional calculus\motion in space\linear algebra\topological map\.../one-shot/contour
