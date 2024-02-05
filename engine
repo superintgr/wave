@@ -1,19 +1,104 @@
 <configuration>
-
 [-1][+1] fixed point solver, maximum power 1/24
 [-0][+0] recurrent cell-cell binder, maximum volume 1/24
 [+0][+1] recurrent block-cell binder, minimum energy 2/24
 [+1][-1] fixed point scaler, minimum energy 24/2
 [+0][-0] linear cell-cell blocker, maximum power 24/23
-
 </configuration>
 
 <coding descriptions>
-
 - find the basis required for supporting all the upstream construction processes
 - unit cell pairs with different substrates, joinly encoding physical and positional variables
 - ties the dual conjugate pairs to two dimensional space, plane of interaction
 - base state production from ground solved at the floor, scaled with respect to the balanced production
 - cell/cell balance from forward retrodiction, only after last step replenishes the substrate
-
 </coding tasks>
+
+<code>
+import cell, solver
+
+states = [left, right]
+meter = solver(states)
+
+mid = cell(meter)
+
+def sides(state):
+    yield cell(state), cell(state)
+
+The issues:
+1. left and right is assumed to have been available
+2. how is mid cell going to act on something that is not available? taking meter as input?
+3. if we produce sides generically, what does that isolation protect in place of what putting everything into a mid or (mid, side) couldn't do?
+4. for a single organism, all side-mid-side permutations are part of some primary memory. which memory is that if not the ones getting bound?
+5. there must be an interface between any cell group that processes left-right information and any that handles mid-sides correspondingly. between the two named division of substrates, the process gets layered through external subsystems
+5. external subsystem that kicks back same information to both names? but is not programmed like usual ways? physical layer
+
+</code>
+
+
+
+
+problem: i am trying to compile eveything where everything is dynamically determined by a single program based on all of the kinds of data point made available to it.
+key: developing method by which any existing information can give rise to future information where the problem state could be stated and the key point is part of the data points.
+value: a program that evolves all its subroutines so that any version of the program is of valid use case for "me" and all true statements are managed across of time points to retain their status.
+
+
+<case>
+environment: standard python interpreter installed locally from source at root path.
+basis: list of plain text files covering the basic tasks of configuring the environment variables, data paths, external paths and a single binary file.
+
+(main routine)
+start interpreter or varify existing path to be set to root directory.
+when different path is activated, find the process id of the main interpreter.
+
+create a variable or update values of existing one with all running processes.
+the variable will contain a list of all the scripts that originated from the root path and their branches outside of the root directory.
+
+write a function which scans all pid, filters by path and time online for each entries. create a n-tuple for each instances and return a list containing all tupled entries.
+
+go into the data path and enumarate all files:
+    go into configuration file and enumerate all variables:
+        zip all variables to contents of the files
+
+iterate over the interpolated pairs:
+    look up the pid and spawn the process
+    store the state into local variable
+    [what does that spawned process could know about the current environment]
+    [what happens to the rest of the processes]
+    [does spawing allow for repurpose 
+
+
+new discovery: simulate the systematic process of conveting speech to electrical inputs, then voltage drive to speaker sound back
+analog: just like sound where the environment provides medium for air molecules to cause pick up current, which interface turns into voltage spikes, then channels exchanging electrical signals to the port where digital encoding listens with bits which gets encoded bistably within mapped memory.
+digital: from memory map, digital decoders turning bits to voltage which ported out to analog current for speaker heads to cause the associated pressure information.
+
+analysis: daw like fl studio has interface code where I can plot points in a piano roll window which directly maps every work input to a specific channel.
+channel: codes for digital mapping of note data to cause analog translation.
+interface: if all input take on intermediate response in linear transformations such as x being automatic horizon for y points being plotted then the associated (real time or latent time) translation into sound (however mixed) can finetine the expectation values.
+value: expectation values are always switching hands while interconnecting each other through parallel universes where similar things synchronize their associations. even if associations are not all within a linear horizon of a single universe, the horizon being linear at all encodes all of the thermodynamic information which never allows somethings and those never happens to exist either
+
+
+replicating analog process: if the source, medium, physics, channel, target interconnections and communications be replicated in digital environments, then we must define the digital-analog of the same physical environment to which physical-analog would be the analog-digital interface.
+issue: unlike music, sound, impulses, graphics etc. have natural interconnected bridges which communicates mostly automatically through us and around our attentional coding of transformations like we do in programming according to another programming for and through other programming
+.. here we must define what information of that nature could be conspired discretely while keeping touch with the reality through running the programming to drive out and back around to something bistable?
+
+<neural networks>
+if need a finetuning that cannot provide a reference pair in discovering analogous states, but whose outermost realization of stateful ness could be pairwise distinguishable:
+    1. we need a linear programming model which discovers its own quantization scheme,
+    2. the quantized state of any layer of the environment(s) substrate must keep locality seperated,
+    3. usual layers of modeling neural network would happen in two steps in parallel: (user to interface, interface to user) and (interface to physics xor physics to interface) xor (interface to interface, physics to user)
+    4. the state which lets user interact with variables of a wrapper program must exclusive or with the file state from which the variables are derived,
+    5. from the physical state near the user state there are two discrete states: - when restoring force leaks out straight to the physical space, - interface variables taking updates for relaying back to interface
+    6. the inner most environment is where the variables take on meta-substrate actions where the dynamics of that universe drives what ultimately would be interpreted.
+
+interface being connected to show functional mapping of symbolic codes near the edge and closer to us:
+    - it should be stable to selected variable with pattens that I'd agree beforehand,
+    - the patterns should take on any form where my agreement signal will come indirectly
+
+stages: ordered set of files
+files: text tokens encoded in binary values
+tokens: variables that have encoding/decoding functions
+variables: components of a state matrix which takes on discrete values
+state matrix: an array storing changes made to another array which jointly isolates the actions and transformations
+system: an organized set with transition patterns being controlled through fixed length code and fixed lenght description
+code: an agreed upon mapping of symbols which signals changes with respect to other changes acknowledged beforehand
