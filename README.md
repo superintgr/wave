@@ -70,3 +70,21 @@ Oxidation states of carbon atoms contain the set `<-4, -3, -2, -1, 0, +1, +2, +3
 **The oxization state here describes for `standard tempetature and pressure` which encodes the `solid` attributes into the `phase` substrate for any property of possible type.
 
 It has some `triple point` representation encoding the states for which all of the possible `phase constructor` exists in thermodynamic equilibrium which we call `super information` substrate and the constructors as `super integer` computatation medium. [see `tensor`, `tensile strength`, `native profile`]
+
+**Recurrent Processes**
+
+Typically recurrent networks of neurons work in the following style:
+- at every step, it expects an input signal and an additional memory information consituting last hidden state or some convolved transition of internal configuration associated with how the network produces new state
+- the result of a feedforward transform is a pair: `output state`, `state variables`
+- chaining further any effect related to the generated states for subsequent feedforward events
+
+The output state it produces only depend on the hidden state it returns along side, assuming no drastic non-linear changes made to the parameters.
+
+**non linear** is meant here as physical evolution of the density constructor that does not evolve in unitary motion.
+
+The `unitary` refers to unit correspondence, which states that all linear changes in logically related functions of the participating variables move with finite means in computation process.
+
+**Computations**
+
+1. An initialized model is made to produce the right visible state either in output production or intermediate levels
+2. 
