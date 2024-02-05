@@ -87,4 +87,53 @@ The `unitary` refers to unit correspondence, which states that all linear change
 **Computations**
 
 1. An initialized model is made to produce the right visible state either in output production or intermediate levels
-2. 
+2. There is a set of features and their mapping to code which executes the feature image. Such a record usually contains possible set of features as key and associated criteria for realizing any such having permutations applied to it and code objects to manage the states of those features,
+
+For example:
+
+- `excaldraw` -> `dictionary` at step `t + 1`
+- at step `t - 1`, the dictionary must have had the same keys
+- the set of invarient `key` instances are called features
+- `feature set` maps any change between two states `(state[t + 1], state[t - 1])` using a *vector* of associated `variable` as parameters.
+- the model that learns to identify the set of features are parametric networks with coefficients appying `transformation`(s) to the variables
+
+**Linear Transformation**
+
+Changes made between two states to a variable records information necessary to handle the change.
+
+**The model must identify all changes not limited to higher level transitions**.
+
+We setup a server of states with fixed duration and uniform interval between transitions.
+- at each timestep, the server either has detected changes or making changes to existing files
+- for any change detected, it encodes the data contents into a vector of features
+- from the data features, the vector is transformed by one or more models specific to the feature components in it
+- the transformation is decoded back to another feature vector where the new state must be translated into data values
+- decoded data is postprocessed into the format required and sent to the server for confirming changes
+
+**Interpreter and Callback**
+
+In the design window, I shall build structures that may require executing some code in order to derive intermediate state within the window.
+
+However, I am going to design or plan in terms of code or programming objects to cause equivalent possible transformation but rather my workflow will only rise to the coding level, if and only if some variable is required to have computation performed because it would not otherwise be optimal.
+
+- `static` variables are the one that do not require change to be computed and `dynamic` states require those variables to participate.
+- in my work model, the entire collection of elements are bi-stably static.
+- 'bi-stable'-ity means that high level design -> context dependent change, context dependent change -> high level design -- while all change is finite and made within a bounded area of elastic states
+
+For example,
+
+In the design environment, the following graph is embedded:
+    ```
+    block name : displaying ascii characters with integer tokens
+    stack : [python interpreter -> block code -> dictionary mapping -> block code -> python interpreter]
+
+    block name : fetching the printed information from last block
+    stack : [python interpreter -> block code -> snapshot -> dictionary mapping -> query -> key -> value -> python interpreter]
+
+    block name : putting all changes together
+    ceiling : ...
+    levels : ...
+    floor : ...
+    ```
+...
+THIS BRANCH IS BEING ARCHIVED. SEE ENVIRONMENT PATH.
