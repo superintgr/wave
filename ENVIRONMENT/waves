@@ -1,0 +1,15 @@
+- is it possible to simulate electrical networks for their exchange in electromechanical waves,
+- is it possible to simulate acoustical networks for their exchange in elastic energetic mechanical waves
+
+room's have their intrinsic resonance profile
+acoustic information effects the low-mid, mid-high frequency zones
+- is it possible to model a network to represent one such room?
+
+The input of acoustic energy to the room at the modal frequencies and multiples thereof causes standing waves. The nodes and antinodes of these standing waves result in the loudness of the particular resonant frequency being different at different locations of the room. These standing waves can be considered a temporary storage of acoustic energy as they take a finite time to build up and a finite time to dissipate once the sound energy source has been removed.
+- if the model above is possible, is this task also possible?
+
+- is VU meter possible?
+- is dB measure possible?
+- is metering possible?
+- is headroom possible?
+- is programme level possible?
