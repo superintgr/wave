@@ -23,3 +23,26 @@
 
 [task] : an ideal task is to be written soon.
 [hint] : it has to do with mediums and transfers between them.
+
+
+
+[config] as task set:
+. [-1] pull samples from memory [where][about]
+. [-0] create impulse train [for][which]
+. [+0] sample impulse response [from][source]
+. [+1] push samples to memory [from][here]
+
+[gpt][generic] : shape (100, 256, 100) for base model
+[train][dataset] : automatic solver of internal symmetry
+[impulse][medium] : output -> linear medium
+[response][vector] : input <- gradient
+[state][identity] : swap cooridnates
+
+
+- pipeline for how input/output gets routed
+- loss function which ?
+- optimizer callable automatically for critical state
+- generator function
+- making it autonomous
+- set concrete tasks as trainable vectors
+
