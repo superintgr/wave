@@ -1,4 +1,4 @@
-[\matrix\tensor\hamard\.. /product]
+[\matrix\tensor\hamard\.. /product/clave]
 
 [*] thing/person/program/object  resulting off a process or action
 [tensor product] two tensors are computed in parallel with each tensor transformed in their local group and their sum of transformed product returns the tensor product of two matrices.
@@ -11,7 +11,21 @@
 [gen][eye][*] find me back within limit interval, because you would like to show me something something.
 
 
-[I][meta][language]
+[I][meta][language] clave data structure described below:
+.. landmark structure : sequence of array with n slots and k < n flags
+.. order of sequence  : order of operations for n slots and permutations(n)
+.. positional coding  : indices for which activation patterns start
+.. timeline encoding  : clock intervals for setting running times for each flagged points
+[definition][input] division of patterns into N landmarks and N segments along run length direction.
+[melody][contour] three elements define structure of melodic patterns
+[1] piano roll : graph of `x` -> horizontal line, `y` -> pair wise product ~ quantized set, contour maps
+[2] scale quantizer : unifies and restricts degrees of freedom to specified discrete set
+[3] chord progression : state vectors of the wave function
+
+[repetition][dynamic] divides contour across blocks of grouped 
+
+
+
 
 [image][action]
 [code][process]
