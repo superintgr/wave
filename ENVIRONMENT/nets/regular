@@ -1,14 +1,93 @@
 [/nets/regular...\paralell\serial\]
-
 parallel : any `p` is true while `q` -> not `p` and `q` <- `p` never is true
-
 serial : `p + q` for any `p` from `P` and `q` from `Q` is true while `p * q` cannot be true but `q - p` may be true
 
 [/nets/regular/parallel/serial/...\composition\]
-
 composition : if parallel: all +1 can have all -1 while -1 ~ 0 or 0 ~ +1 and +1 -> 0 or 0 -> -1 is true for -1 and +1 must keep 0 in pair
-  
 composition : 
+
+[/nets/...\constructor\task\substrate\medium\computation\measurement\information\communication\]
+- A network analyzer is an instrument that measures the network parameters of electrical networks. Today, network analyzers commonly measure s–parameters because reflection and transmission of electrical networks are easy to measure at high frequencies, but there are other network parameter sets such as y-parameters, z-parameters, and h-parameters. Network analyzers are often used to characterize two-port networks such as amplifiers and filters, but they can be used on networks with an arbitrary number of ports.
+- The two basic types of network analyzers are
+- scalar network analyzer (SNA)—measures amplitude properties only
+- vector network analyzer (VNA)—measures both amplitude and phase properties
+- A VNA is a form of RF network analyzer widely used for RF design applications. A VNA may also be called a gain–phase meter or an automatic network analyzer. An SNA is functionally identical to a spectrum analyzer in combination with a tracking generator.
+- The basic architecture of a network analyzer involves a signal generator, a test set, one or more receivers and display. In some setups, these units are distinct instruments. Most VNAs have two test ports, permitting measurement of four S-parameters {\displaystyle (S_{11},S_{21},S_{12},S_{22})}, but instruments with more than two ports are available commercially.
+
+[peripheral bus]
+In computing, a peripheral bus is a computer bus designed to support computer peripherals like printers and hard drives. The term is generally used to refer to systems that offer support for a wide variety of devices, like Universal Serial Bus, as opposed to those that are dedicated to specific types of hardware. Serial AT Attachment, or SATA is designed and optimized for communication with mass storage devices.
+This usage is not universal, some definitions of peripheral bus include any bus that is not a system bus, including examples like PCI.[1] Others treat PCI and similar systems as a third category, the expansion bus.
+
+[parallel port]
+In computing, a parallel port is a type of interface found on early computers (personal and otherwise) for connecting peripherals. The name refers to the way the data is sent; parallel ports send multiple bits of data at once (parallel communication), as opposed to serial communication, in which bits are sent one at a time. To do this, parallel ports require multiple data lines in their cables and port connectors and tend to be larger than contemporary serial ports, which only require one data line.
+
+The older parallel printer ports had an 8-bit data bus and four pins for control output (Strobe, Linefeed, Initialize, and Select In), and five more for control input (ACK, Busy, Select, Error, and Paper Out). Its data transfer speed is at 150 kB/s.[1]
+
+Pinouts for parallel port connectors are:
+Pinouts for parallel port connectors.
+Pin No (DB25)	Pin No (36 pin)	Signal name	Direction	Register - bit	Inverted
+1	1	Strobe	In/out	Control-0	Yes
+2	2	Data0	Out	Data-0	No
+3	3	Data1	Out	Data-1	No
+4	4	Data2	Out	Data-2	No
+5	5	Data3	Out	Data-3	No
+6	6	Data4	Out	Data-4	No
+7	7	Data5	Out	Data-5	No
+8	8	Data6	Out	Data-6	No
+9	9	Data7	Out	Data-7	No
+10	10	Ack	In	Status-6	No
+11	11	Busy	In	Status-7	Yes
+12	12	Paper-Out	In	Status-5	No
+13	13	Select	In	Status-4	No
+14	14	Linefeed	In/out	Control-1	Yes
+15	32	Error	In	Status-3	No
+16	31	Reset	In/out	Control-2	No
+17	36	Select-Printer	In/out	Control-3	Yes
+18-25	19-30,33,17,16	Ground	-	-	-
+Inverted lines are true on logic low. If they are not inverted, then logic high is true.
+
+Pin 25 on the DB25 connector might not be connected to ground on modern computers.[dubious – discuss]
+
+[multi master bus] :
+A multi-master bus is a computer bus in which there are multiple bus master nodes present on the bus.[1] This is used when multiple nodes on the bus must initiate transfer. For example, direct memory access (DMA) is used to transfer data between peripherals and memory without the need to use the central processing unit (CPU).
+
+Some buses like I²C use multi-mastering inherently to allow any node to initiate a transfer with another node.[2]
+
+[instrumentation command for test automatition] :
+The Standard Commands for Programmable Instruments (SCPI; often pronounced "skippy") defines a standard for syntax and commands to use in controlling programmable test and measurement devices, such as automatic test equipment and electronic test equipment.[3]
+
+
+
+[3D circuit] / sample code layout:
+class ThreeDCircuit:
+    def __init__(self, layers, components_per_layer):
+        self.layers = layers
+        self.components_per_layer = components_per_layer
+        self.active_components = [[[0] * components_per_layer for _ in range(layers)] for _ in range(layers)]
+
+    def add_component(self, layer, row, col, component_value):
+        self.active_components[layer][row][col] = component_value
+
+    def print_circuit(self):
+        for layer in range(self.layers):
+            print(f"Layer {layer + 1}:")
+            for row in range(self.components_per_layer):
+                print(" ".join(map(str, self.active_components[layer][row])))
+            print()
+
+# Instantiate a 3D circuit
+layers = 3
+components_per_layer = 4
+circuit = ThreeDCircuit(layers, components_per_layer)
+
+# Add components to the circuit
+circuit.add_component(0, 0, 0, 1)
+circuit.add_component(1, 1, 2, 2)
+circuit.add_component(2, 3, 1, 3)
+
+# Print the 3D circuit
+circuit.print_circuit()
+
 
 [computational network] and signal sent via waves take on these variables:
 . [propagation delay] is the amount of time it takes for the head `H(x)` of the signal to travel from the sender `f(x)` to the receiver `g(x)`.
