@@ -2,7 +2,7 @@
 
 [expectation] : function `psi` produces state `star`
 [star] : ..
-[
+[commute] : confirm what is being done and deny likewise
 
 
 [value] : a perfect mapping of hidden states across distances
