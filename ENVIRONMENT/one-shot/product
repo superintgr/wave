@@ -24,13 +24,25 @@
 
 [repetition][dynamic] divides contour across blocks of grouped 
 
-scales : mode, key
-harmonic fuction theory : progression gen
-
+[scales][mode][key] : .
+[harmonic][fuction] : chord progression generation
 
 
 [image][action]
-[code][process]
+[\nondimensionalization\product\.../ionization/radiation/.]
+. [ion][atomic] : instance type lacks bi-stabity in their constructions.
+. [bi][stable] : positive or negative gradient causes polarity to change
+. [model][variable] : `ion` class instantiates usual dynamics in channel spaces.
+
+[channel][f] : function takes in `prompt` + `last_context`
+[completion] : `f(prompt + last_context)` : variable | parameters -> completion kernel
+[kernel] : maps `i` -> I and `i-` -> I**1-
+[operator][kernel] : kernel of the functions will map the states for which either one fails to approach ~ root
+[\kernel\homomorphism\abstract\algebra\../gpt]
+
+[code][process] : setting up limiter
+[limiter][context][variable] : finds minimum of the function of context complexity, such that limit is definable
+[limit][context] : 
 
 
 [language][programming]
