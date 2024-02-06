@@ -9,3 +9,70 @@ serial : `p + q` for any `p` from `P` and `q` from `Q` is true while `p * q` can
 composition : if parallel: all +1 can have all -1 while -1 ~ 0 or 0 ~ +1 and +1 -> 0 or 0 -> -1 is true for -1 and +1 must keep 0 in pair
   
 composition : 
+
+[computational network] and signal sent via waves take on these variables:
+. [propagation delay] is the amount of time it takes for the head `H(x)` of the signal to travel from the sender `f(x)` to the receiver `g(x)`.
+
+[delay] : It can be computed as the ratio between the link length `path in linear coding space` and the propagation speed `v(x)` over the specific medium `M`.
+
+Propagation delay is equal to d / s where d is the distance and s is the wave propagation speed.
+
+In wireless communication, s=c, i.e. the speed of light.
+In copper wire, the speed s generally ranges from .59c to .77c.
+This delay is the major obstacle in the development of high-speed computers and is called the `interconnect bottleneck` in IC systems.
+
+[interconnect bottleneck] the following list is not yet checked/
+Electrical impedance defined as vector sum of electrical resistance and electrical reactance
+Electrical admittance, the reciprocal of electrical impedance
+Phase between current and voltage and related power factor
+Electrical spectral density
+
+Electrical power by the means of electricity meter
+S-matrix by the means of network analyzer (electrical)
+Electrical power spectrum by the means of spectrum analyzer
+Measurable dependent electrical quantities comprise:
+.. end of the list is here.
+
+[code snippet for passive circuit] _ simulation purpose was intended:
+class ElectricalSystem:
+    def __init__(self, resistance, inductance, capacitance):
+        self.resistance = resistance
+        self.inductance = inductance
+        self.capacitance = capacitance
+
+    def compute_power(self, voltage, current):
+        return voltage * current
+
+    def update_state(self, state, time_step):
+        # Your system dynamics update logic goes here
+        # For simplicity, let's assume a basic RC circuit
+        new_state = state + time_step * (state / (self.resistance * self.capacitance))
+        return new_state
+
+    def storage_function(self, state):
+        # Define the storage function EA(x) here
+        # For demonstration, let's consider a quadratic function
+        return 0.5 * state**2
+
+# Instantiate the ElectricalSystem with parameters
+electrical_system = ElectricalSystem(resistance=1.0, inductance=0.5, capacitance=0.2)
+
+# During the events feedforward step
+time_step = 0.01
+voltage_input = 5.0
+current_input = 2.0
+
+# Compute power
+power = electrical_system.compute_power(voltage_input, current_input)
+
+# Update state based on the system dynamics
+current_state = 3.0  # Initial state
+new_state = electrical_system.update_state(current_state, time_step)
+
+# Evaluate storage function
+storage_value = electrical_system.storage_function(new_state)
+
+# Print results for demonstration
+print("Power:", power)
+print("New State:", new_state)
+print("Storage Function Value:", storage_value)
