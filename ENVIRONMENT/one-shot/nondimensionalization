@@ -1,0 +1,44 @@
+[\product\.../.]
+
+[Nondimensionalization] : is the partial or full removal of physical dimensions from an equation involving physical quantities by a suitable substitution of variables.
+[substitution] : This technique can simplify and parameterize problems where measured units are involved.
+[measure][unit] : It is closely related to dimensional analysis.
+
+[dimensional][analysis] : In some physical systems, the term scaling is used interchangeably with nondimensionalization
+[scale] : in order to suggest that certain quantities are better measured relative to some appropriate unit.
+[relative][state] : These units refer to quantities intrinsic to the system, rather than units such as SI units.
+
+[intrinsic][attribute] : Nondimensionalization is not the same as converting extensive quantities in an equation to intensive quantities
+[extensive][intensive][thermal][dynamic] : since the latter procedure results in variables that still carry units.
+
+[mix][state] : Nondimensionalization can also recover characteristic properties of a system.
+[system][character][property] : if a system has an intrinsic `resonance frequency`, `length`, or `time constant`
+[instric] : nondimensionalization can recover these values.
+
+[recover][variable] : The technique is especially useful for systems that can be described by differential equations.
+[control][analysis] : One important use is in the analysis of control systems.
+
+[exponential][euler] : One of the simplest characteristic units is the `doubling time` of a system experiencing exponential growth
+[decay] : or conversely the half-life of a system experiencing exponential decay;
+
+[life][age] : a more natural pair of characteristic units is mean age/mean lifetime
+[mean][half] : which correspond to base `e` rather than `base 2`.
+
+[differential] : Many illustrative examples of nondimensionalization originate from simplifying differential equations. This is because a large body of physical problems can be formulated in terms of differential equations. 
+
+[Consider the following] : 
+. \List of dynamical systems and differential equations topics\List of partial differential equation topics\Differential equations of mathematical physics\.../.
+
+[adaption] : Although nondimensionalization is well adapted for these problems, it is not restricted to them.
+
+[normalization][differential] : An example of a non-differential-equation application is dimensional analysis; another example is normalization in statistics.
+
+[measure][device] : Measuring devices are practical examples of nondimensionalization occurring in everyday life. 
+
+[preperation][device] : Measuring devices are calibrated relative to some known unit.
+
+[measure][relative] : Subsequent measurements are made relative to this standard.
+
+[standard][scalar] : Then, the absolute value of the measurement is recovered by scaling with respect to the standard.
+
+\nondimensional\analysis\differential\normalization\analysis\intrinsic\property\measure\standard\physics\variable\.../nondimentionalization/ionization/radiation
