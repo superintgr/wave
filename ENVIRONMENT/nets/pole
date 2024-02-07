@@ -2,3 +2,9 @@ An interesting parallel between a programmable quantum computer (whose admissibl
 
 Chiara proved that variables that can serve as input to a deterministic work extractor must be a set of distinguishable attributes
 
+These could be either a set of sharp energy states; or a set of states that are not diagonal in the energy basis, each provided with orthogonal labels.
+
+This constitutes the only possible 'work basis', which, like the computational basis, has to consist of distinguishable, orthogonal subspaces. These could be either a set of sharp energy states; or a set of states that are not diagonal in the energy basis, each provided with orthogonal labels. This poses a fundamental limit on the work that can be extracted deterministically from quantum systems with coherence in the energy basis, by a machine that can extract work individually from each of the states in the energy basis.
+
+One can for instance envisage a process that extracts work optimally and deterministically from a system prepared in a particular, known, quantum state that is the coherent superposition of different energy eigenstates, [11], as compared to the corresponding thermal state with the same mean energy. Supposing the work extracted from the superposition is different from that extractable from each of the energy basis states, the results of this paper imply that such a process would have to be a special-purpose machine, which requires to know a priori which state has been prepared. Therefore, it is not a proper work-extractor in the thermodynamic sense, not more than a Szilard engine without its memory is.
+
