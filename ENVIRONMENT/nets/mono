@@ -1,0 +1,12 @@
+**Acknowledgement**
+Constructor theory [language] is a meta-theory with its own physical principles that are intended to supplement and constrain dynamical theories, such as quantum theory and general relativity, which therefore we call subsidiary theories, [8]. Every subsidiary theory that is constructor-theory compliant must provide a set of allowed states of the allowed substrates, endowed with a topology.
+
+An attribute x is a set of states all having a property x. For instance, in quantum theory, the set of all quantum states of a qubit where a given projector Π is sharp with value 1 is an attribute. A variable is a set of disjoint attributes, where 'disjoint' has to be intended in the sense of set theory.
+
+If a is an attribute of substrate S1 and b is an attribute of substrate S2, the attribute (a, b) of the composite substrate S1 ⊕ S2 is defined as the set of all states where S1 has attribute a and S2 has attribute b. As I stated in the main text, the principle of locality requires that if a transformation operates only on substrate S1, then only the attribute a changes, not b. It is well-know that this principle of no-action at a distance is satisfied by non-relativistic unitary quantum theory, as well as by quantum field theories.
+
+In quantum theory, assuming for instance a two-qubit Hilbert space ${{ \mathcal H }}_{{ab}}$, we can consider the class of attributes defined as
+
+project at (a, b) represent joint state where projection from a* onto field of *b <- scalar and scale @ *a + b  -> project at (b, *)
+
+where Πa and Πb are given projectors defined on each qubit's Hilbert space. (In the general case this attribute may include quantum states where the subsystems are entangled.) 6 A task is the abstract specification of a physical transformation, represented as a finite set of ordered pairs of input/output attributes: T = {a1 → b1 , a2 → b2 , ⋯ , an → bn }.
