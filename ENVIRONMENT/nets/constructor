@@ -1,0 +1,9 @@
+A constructor for a task T is a system which whenever presented with the substrate of the task T in one of the input attributes, it delivers it in one of the states of the allowed output attributes, and retains the ability to do that again. A task is impossible if the laws of physics impose a limit on how accurately it can be performed by a constructor. Otherwise, the task is possible. Constructor-theoretic statements never refer to specific constructors, only to the fact that tasks are possible or impossible. This is what allows them to be scale- and dynamics-independent.
+
+Tasks close an algebra, [17]. Two tasks T1 and T2 can be composed in series (whenever the output set of attributes of T1 includes the input set of attributes of T2), or in parallel, with the usual informal meaning of parallel and serial composition, [9]. I denote the serial composition of two tasks as T1 T2; the parallel composition as T1 ⨂ T2. The transpose of a task T, denoted by T∼, is the task with the input/output pairs of T inverted: T∼ ≐ {b → a}. One requires that ${\left({T}^{\sim }\right)}^{\sim }=T;$ and that ${\left({T}_{1}\otimes {T}_{2}\right)}^{\sim }={T}_{1}^{\sim }\otimes {T}_{2}^{\sim }$.
+
+**Composition**
+A cardinal principle of constructor theory, called the composition law, is othat the composition of two possible tasks is a possible task.
+
+**Acknowledge**
+Buffers [`buffer`] are used in all types of circuits, linear and digital, for this same purpose, to avoid taking more current from a signal source than it can comfortably supply. Another function of a buffer is to isolate two stages so that the signals in the second stage cannot affect the first stage.
