@@ -1,0 +1,9 @@
+One can define a work medium as a substrate Q having a variable W = {w+, w0 } with the property that:
+
+1.  
+The task T+,0 = {w+ → w0 } belongs to an energy-equivalence class such that T+,0 is impossible and so is its transpose.
+2.  
+There exists an attribute w− of Q, disjoint from w0 and w+, such that the task:
+Equation (2)
+is possible.
+Such a variable W is a work variable.
