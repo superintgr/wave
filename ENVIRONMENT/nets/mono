@@ -12,31 +12,8 @@ project at (a, b) represent joint state where projection from a* onto field of *
 where Πa and Πb are given projectors defined on each qubit's Hilbert space. (In the general case this attribute may include quantum states where the subsystems are entangled.) 6 A task is the abstract specification of a physical transformation, represented as a finite set of ordered pairs of input/output attributes: T = {a1 → b1 , a2 → b2 , ⋯ , an → bn }.
 
 
-
-**task**
-t, H : time, Horizontal
-x is input
-y is asserted
-
-whose line of sight must x be made on
-when is t for x and y for the horizon
-
-[in][y]
-[t][H]
-
-[z][e] : ...
-[H][t] : +++
-
-find all H and t
-find all [x][y][z] and [H][t][e]
-
-**data and statistics**
-None
-
-
 **task**
 key, position, interval : pressed, mouse, time since last epoch
-
 epoch, frequency, next epoch : time, rate, action
 
 functions = {}
@@ -44,8 +21,43 @@ memory = []
 
 distance from center, shift from origin = integer, tuple
 
-
 **data and statistics**
 [degrees, average speed, scaling factor]
 [project, cost of operation, complexity]
 [return, power of action, net dissipated energy]
+
+**task**
+programming of input/output driver and terminal dedicated for blocking.
+programming of block/release function and data requirement to write callables.
+writing test code before setup step and main script outline with clean code.
+
+for test functions, routine is needed and queue of subroutines should be programmed.
+there must exist linear transition of states that are error free.
+predict all possible break down scenario and prove protected override methods for each of the cases.
+
+finally write code for switching onto another script if anything terminates.
+
+github codespace addresses = {}
+
+**data and statistics**
+local config = {os variable : script variable}
+line config = {(code object id, string formatted variable) : (remote variable name, patcher function lambda)}
+remote config = {(local variable, code reference label) : (eval output string, copy of local variable)}
+
+if local script executed without error:
+    if line config transferred to codespace:
+        if remote code executed without error:
+            iterate over task in list possible information:
+                continue to collect status from each eval and exec available
+                if breaks, unroll all branches and set flag for code space config:
+    if terminal: check flagged value and set status for information transfer
+
+if information transferred:
+    switch back to local path while tracing return codes from all unrolling steps.
+    yield returned elements and sum of the total cost
+else:
+    raise ConflictExists
+
+print collection report after closing all the gates from outside environment at main
+main is successfully travelled back to home address.
+current information available at home area.
