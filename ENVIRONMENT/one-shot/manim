@@ -1,0 +1,15 @@
+[\3blue1brown\
+
+how do you set input collecting frames?
+a manim script renders the specified scene information onto the screen.
+the objects are defined using geometric/functional/patterns etc. attributes specified inside the scene.
+my task requires taking text input from one of the rendered images (state) into buffer.
+
+how do you handle the programming of that script?
+
+manim does not allow any such interface.
+wx gui has basic graphical interface functions.
+background and frame window must be custom but I have not tried them.
+i used `pyinput` for setting some io routines and these should override keyboard and mouse interface on mac os.
+
+can one prepare a gated block for all voltage coming from keyboard/mouse into ports before applying their realizations in os programs?
