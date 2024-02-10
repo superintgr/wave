@@ -7,3 +7,21 @@ A cardinal principle of constructor theory, called the composition law, is othat
 
 **Acknowledge**
 Buffers [`buffer`] are used in all types of circuits, linear and digital, for this same purpose, to avoid taking more current from a signal source than it can comfortably supply. Another function of a buffer is to isolate two stages so that the signals in the second stage cannot affect the first stage.
+
+
+**Generic**
+In a standard I/O environment with substrate confirming to unix terminal based command line interface:
+1. task of creating new file is possible
+2. task of opening created file is possible
+3. task of writing inside created file is possible
+4. task of saving existing file with modified data is possible
+5. task of displaying contents of a valid file is possible
+6. task of observing standard output from a path is possible
+7. task of storing observed standard output to a seperate file is possible
+8. task of handling file I/O on any valid file path is possible
+9. task of copying existing file onto a duplicate file is possible
+10. task of comparing contents of two file paths is possible
+11. task of recording comparison made between two files is possible
+12. task of connecting detachable memory storage is possible
+13. task of copying files between two substrates is possible
+14. task of performing all regular tasks on detachable memory substrate is possible
