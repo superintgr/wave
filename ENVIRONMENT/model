@@ -1,0 +1,29 @@
+tasks : [conservation of energy, reciprocal relationship between disjoint variables, discrete-continuous subsystems inside singular mono-system]
+
+[A] The general parallel computation requires:
+
+[-1, -0] : mapping left-mid points
+[-0, +0] : mapping mid-side points
+[+0, +1] : mapping side-right points
+[+1, -1] : mapping right-left points
+
+[B] Two channels individually go through seperate buffers and processing stages to produce final output:
+
+[-1][0] : [left][input][mid] -> [+][buffer][-]
+[+1][0] : [right][input][sides] -> [+][buffer][-]
+
+[C] For each compute step, a set of input nodes will produce a set of output nodes where the sum of node/antinode
+ratios are kept conservative:
+
+forward : (variable, constant : antinode, node)
+backward : (output, difference : input, sum)
+
+[D] Superposition of (node, opetator, antinode) and (variable, constant, memory) defines the possible set of computation variables:
+
+Consider the static (left, right) variables where a dynamical operator will record states in a linear operations performed on those components using the (mid, sides) conjugate values per change applied to them.
+
+The dynamic operator:
+
+- mid : left and right -> 0.5 * left and right * 0.5
+- sides : left or right -> 0.5 * left or 0.5 * right
+
