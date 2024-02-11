@@ -1,0 +1,75 @@
+[../geometric-io]
+
+[spherical][file] : input, output functions
+[code] : 
+class SphericalFileIO:
+    def __init__(self, filename, radius=10.0):
+        self.filename = filename
+        self.radius = radius
+        self.coordinates = {}  # Dictionary to store spherical coordinates for each byte position
+
+    def _spherical_to_cartesian(self, radius, theta, phi):
+        x = radius * math.sin(phi) * math.cos(theta)
+        y = radius * math.sin(phi) * math.sin(theta)
+        z = radius * math.cos(phi)
+        return x, y, z
+
+    def _cartesian_to_spherical(self, x, y, z):
+        radius = math.sqrt(x**2 + y**2 + z**2)
+        theta = math.atan2(y, x)
+        phi = math.acos(z / radius)
+        return radius, theta, phi
+
+    def _get_position_coordinates(self, position):
+        if position not in self.coordinates:
+            # If position is not stored, initialize with default spherical coordinates
+            theta = 0.0
+            phi = 0.0
+            self.coordinates[position] = {'theta': theta, 'phi': phi}
+        else:
+            # Retrieve existing spherical coordinates for the position
+            theta = self.coordinates[position]['theta']
+            phi = self.coordinates[position]['phi']
+
+        # Convert spherical coordinates to Cartesian coordinates
+        x, y, z = self._spherical_to_cartesian(self.radius, theta, phi)
+        return x, y, z
+
+    def _update_position_coordinates(self, position, x, y, z):
+        # Convert Cartesian coordinates to spherical coordinates and update the dictionary
+        radius, theta, phi = self._cartesian_to_spherical(x, y, z)
+        self.coordinates[position] = {'theta': theta, 'phi': phi}
+
+    def read(self, position, length):
+        with open(self.filename, 'r') as file:
+            file.seek(position)
+            data = file.read(length)
+            x, y, z = self._get_position_coordinates(position)
+            self._update_position_coordinates(position, x, y, z)
+        return data
+
+    def write(self, position, data):
+        with open(self.filename, 'r+') as file:
+            file.seek(position)
+            file.write(data)
+            x, y, z = self._get_position_coordinates(position)
+            self._update_position_coordinates(position, x, y, z)
+
+    def save_coordinates(self, output_file='coordinates.json'):
+        with open(output_file, 'w') as json_file:
+            json.dump(self.coordinates, json_file, indent=2)
+
+# Example Usage:
+# Create an instance of SphericalFileIO
+spherical_io = SphericalFileIO(filename='sample.txt', radius=10.0)
+
+# Read and write at specific positions
+data_read = spherical_io.read(position=5, length=10)
+print("Read data:", data_read)
+
+spherical_io.write(position=5, data="Updated")
+data_after_write = spherical_io.read(position=5, length=10)
+print("Data after write:", data_after_write)
+
+# Save coordinates to a JSON file
+spherical_io.save_coordinates()
