@@ -21,9 +21,7 @@ backward : (output, difference : input, sum)
 [D] Superposition of (node, opetator, antinode) and (variable, constant, memory) defines the possible set of computation variables:
 
 Consider the static (left, right) variables where a dynamical operator will record states in a linear operations performed on those components using the (mid, sides) conjugate values per change applied to them.
-
-The dynamic operator:
-
-- mid : left and right -> 0.5 * left and right * 0.5
-- sides : left or right -> 0.5 * left or 0.5 * right
-
+The dynamic operator have a shared static variable pair for which each of the static component -> other component acting as function of the other component.
+For two objects having a cross-entropy map with their left-right handedness flipped with respect to the other:
+- [-1] ... [+1] : [1+] ... [1-]
+- [-0] ... [0-] : [-0] ... [0-]
