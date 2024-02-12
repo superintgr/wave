@@ -8,3 +8,41 @@
 [plan][ahead] : [due to their conservative characteristic, I'd like to design a model of computation that uses standing wave basis]
 [basis][attribute] : [variable that are in consideration must map to physical parameters]
 [information][property] : [we would have defined a substrate with properties mapping physical attributes through sharp measurable/observable images]
+
+
+
+[~\openai\completion\api\service\finetuning\resource\limitation\.../.
+thermodynamic/property/information/variable/]
+
+In a thermodynamical manner, the completion, prompting, and back-and-forth interactions within a text-in, text-out API can be metaphorically likened to energy exchanges and transformations. Let's break down how this analogy might work:
+
+1. **Initialization (Low Energy State):**
+   - **Text Input (Request):** Represents the system in a low-energy state, analogous to an initial configuration with limited information.
+   - **Model Processing (Computation):** The API processes the input, undergoing transformations to a higher-energy state.
+
+2. **Prompting (Energy Input):**
+   - **Response (Completion):** The API responds with a higher-energy state (output). This output can be seen as an injection of energy into the system.
+   - **Interpretation (Measurement):** The user interprets the completion and decides on the next prompt, potentially injecting more energy into the system.
+
+3. **Back-and-Forth (Energy Exchange):**
+   - **Request (Updated Prompt):** The user sends an updated prompt, modifying the input state and influencing the system's energy levels.
+   - **Computation (Model Processing):** The API processes the new prompt, potentially transforming the system to a different energy state.
+   - **Response (Updated Completion):** The API responds with a new completion, reflecting the energy exchanges during the back-and-forth.
+
+4. **Equilibrium (Energy Conservation):**
+   - **Continuous Interaction:** The process continues with an exchange of energy between the user and the API. It strives to reach an equilibrium, analogous to a thermodynamic equilibrium where energy exchange stabilizes.
+
+5. **Complexity and Entropy:**
+   - **Complex Completions:** More complex completions can be seen as an increase in system entropy, capturing the diversity and richness of interactions.
+   - **Energy Losses:** Like thermodynamic systems may experience energy losses, some details might be lost or modified during the completion process.
+
+6. **Learning and Adaptation (System Evolution):**
+   - **User Feedback:** User feedback and adaptation to completions represent the system evolving over time, akin to a system adapting to its environment.
+
+7. **Error Handling (Entropy Increase):**
+   - **Uncertainty and Errors:** Uncertainty or errors in completions could be seen as an increase in entropy, introducing variability and unpredictability into the system.
+
+8. **Closure (Stable State):**
+   - **Stable State:** The process aims to reach a stable state, where the completion and prompt form a coherent and useful exchange.
+
+Remember, this analogy is metaphorical, and the thermodynamic terminology is applied loosely to describe the dynamic interactions between the user and the API in a text completion scenario. It emphasizes the flow and exchange of "information energy" between the user and the system.
