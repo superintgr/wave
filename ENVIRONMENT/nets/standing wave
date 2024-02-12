@@ -9,7 +9,27 @@
 [basis][attribute] : [variable that are in consideration must map to physical parameters]
 [information][property] : [we would have defined a substrate with properties mapping physical attributes through sharp measurable/observable images]
 
+[superposition] : [two waves travelling in a same medium tends to pass around each other and their combined effect is the sum of their individual effect]
+[amplitude] : [the two waves travelling also at the same time][their amplitudes combine linearly]
 
+amplitude(vector, scalar) = amplitude[medium] * sin(number * vector - scalar * momentum) + y[medium] * sin(number * vector - scalar * momentum + phase angle)
+
+[y][x][t] : [y] @ [m]
+[.][m] : [sine][k] @ [x]
+[sine][.][.] : [-][momentum] @ [t]
+[sine][.][x] : [-][angle][moment] @ [time]
+[sine][k][.][-] : [omega][time]
+
+[amplitude][input] : [scalar][sinusoid][wave.][.wave]
+[sinusoid][.][.] : [medium][twice that amount][and cosine at [half phase angle]][and sine at rotating counter factual closure about proportional azimuth]
+[phase][half][.] : [azimuth][horizontal][plane][project][a][ble]
+
+y(x, t) := 2 * medium variable * cos(phase / 2) * sin(number * vector - momentum * linear + phase / 2)
+
+
+[standing][pattern] : [two waves travelling in the opposite direction]
+y(x, t) := y[m] * sin(k * x - omega * t) + y[m] * sin(k * x + omega * time)
+y(x, t) :: 2 * y[m] * cos(omega * t) * sin(omega * x)
 
 
 [\buffer\../Speaker array amplifiers]
