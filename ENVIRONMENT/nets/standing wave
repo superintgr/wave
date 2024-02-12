@@ -11,6 +11,16 @@
 
 
 
+
+[\buffer\../Speaker array amplifiers]
+The majority of amplifiers used to drive large speaker arrays, such as those used for rock concerts, are amplifiers with 26-36dB voltage gain capable of high amounts of current into low impedance speaker arrays where the speakers are wired in parallel.
+
+[buffer\voltage\../buffer]
+Figure 1: Ideal voltage buffer (top) and current buffer (bottom)
+Not to be confused with Data buffer.
+In electronics, a buffer amplifier is a unity gain amplifier that copies a signal from one circuit to another while transforming its electrical impedance to provide a more ideal source (with a lower output impedance for a voltage buffer or a higher output impedance for a current buffer). This "buffers" the signal source in the first circuit against being affected by currents from the electrical load of the second circuit and may simply be called a buffer or follower when context is clear.
+
+
 [~\openai\completion\api\service\finetuning\resource\limitation\.../.
 thermodynamic/property/information/variable/]
 
